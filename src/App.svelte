@@ -69,7 +69,7 @@
     title={'DanielChapman.dev'}
     image={'danielchapman-dev.png'}
     description={"This is the site that you're looking at now. A Svelte site with some simple styling and a couple snazzy animations."}
-    ink={'https://danielchapman.dev'} />
+    link={'https://danielchapman.dev/'} />
 </main>
 <footer>
   Contact me:
