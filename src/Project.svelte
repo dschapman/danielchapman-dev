@@ -83,7 +83,7 @@
     on:mouseenter={handleMouseEnter}
     on:touchstart={handleMouseEnter}
     on:mouseleave={handleMouseLeave}
-    on:touchleave={handleMouseLeave}
+    on:touchend={handleMouseLeave}
     transition:slide={{ delay: 200 }}
     style="box-shadow: {$shadowx}px {$shadowy}px #925c77;"
     class="site">
