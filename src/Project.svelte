@@ -4,6 +4,7 @@
   export let description = "There was no Description";
   export let link;
   export let image = "";
+  let hovered = false;
   import { onMount } from "svelte";
   import { fade, slide } from "svelte/transition";
   import { tweened } from "svelte/motion";
@@ -14,6 +15,18 @@
 
   function handleClick() {
     window.location = link;
+  }
+
+  function handleMouseEnter() {
+    shadowx.set(40);
+    shadowy.set(20);
+    hovered = true;
+  }
+
+  function handleMouseLeave() {
+    shadowx.set(0);
+    shadowy.set(0);
+    hovered = false;
   }
 
   let mounted = false;
@@ -36,10 +49,11 @@
 
   .title {
     font-family: "Fira Sans";
+    font-weight: 400;
   }
+
   .title a {
     color: black;
-    text-decoration: underline;
   }
 
   .description {
@@ -66,18 +80,17 @@
 {#if mounted}
   <div
     on:click={handleClick}
-    on:mouseenter={() => {
-      shadowx.set(40);
-      shadowy.set(20);
-    }}
-    on:mouseleave={() => {
-      shadowx.set(0);
-      shadowy.set(0);
-    }}
+    on:mouseenter={handleMouseEnter}
+    on:touchstart={handleMouseEnter}
+    on:mouseleave={handleMouseLeave}
+    on:touchleave={handleMouseLeave}
     transition:slide={{ delay: 200 }}
-    style="box-shadow: {$shadowx}px {$shadowy}px #925c77"
+    style="box-shadow: {$shadowx}px {$shadowy}px #925c77;"
     class="site">
-    <h2 class="title" transition:fade={{ delay: 250 }}>
+    <h2
+      class="title"
+      transition:fade={{ delay: 250 }}
+      style="text-decoration: {hovered ? 'underline' : 'none'};">
       <a href={link}>{title}</a>
     </h2>
     <img src={image} alt="A screenshot of my website" />
