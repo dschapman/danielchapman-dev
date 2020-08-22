@@ -73,14 +73,16 @@
     description="A digital garden, constructed to hold articles, poems, and
     notes. Featuring bidirectional links, link previews, and self-generating
     OpenGraph images."
-    link={'https://dschapman.com'} />
+    link={'https://dschapman.com'}
+    code={'https://github.com/dschapman/dschapman-com'} />
 
   <Project
     technologies={['Svelte', 'HTML', 'CSS']}
     title={'danielchapman.dev'}
     image={'danielchapman-dev.png'}
     description={"This is the site that you're looking at now. A Svelte site with some simple styling and a couple snazzy animations."}
-    link={'https://danielchapman.dev/'} />
+    link={'https://danielchapman.dev/'}
+    code={'https://github.com/dschapman/danielchapman-dev'} />
 </main>
 <footer>
   <h3>Contact me</h3>

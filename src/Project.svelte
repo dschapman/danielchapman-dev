@@ -1,5 +1,6 @@
 <script>
   export let technologies = [];
+  export let code = "";
   export let title = "There was no Title";
   export let description = "There was no Description";
   export let link;
@@ -85,7 +86,6 @@
     list-style: none;
   }
   li {
-    font-family: "Fira Code";
     display: inline-block;
   }
   li + li {
@@ -94,6 +94,9 @@
   img {
     width: 100%;
     height: auto;
+  }
+  .code {
+    font-family: "Fira Code";
   }
 </style>
 
@@ -118,10 +121,11 @@
     <div class="description" transition:fade={{ delay: 500 }}>
       {description}
     </div>
-    <ul>
+    <ul class="code">
       {#each technologies as technology}
         <li in:typewriter={{ speed: 175 }}>{technology}</li>
       {/each}
     </ul>
+    <a class="code" href={code}>Source Code</a>
   </div>
 {/if}
