@@ -117,7 +117,7 @@
       style="text-decoration: {hovered ? 'underline' : 'none'};">
       <a href={link}>{title}</a>
     </h2>
-    <img src={image} alt="A screenshot of my website" />
+    <img src={image} alt="A screenshot of {title}" />
     <div class="description" transition:fade={{ delay: 500 }}>
       {description}
     </div>
