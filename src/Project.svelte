@@ -23,11 +23,12 @@
 <style>
   .site {
     border-radius: 15px;
-    border-width: 0px;
     border: solid;
+    border-width: thin;
     margin: 1rem;
     padding: 1rem;
-    width: 450px;
+    min-width: 300px;
+    max-width: 450px;
     min-height: 500px;
     position: relative;
     cursor: pointer;
@@ -38,7 +39,7 @@
   }
   .title a {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   .description {

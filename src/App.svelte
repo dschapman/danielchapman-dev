@@ -22,21 +22,17 @@
   main {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
     place-items: center;
   }
 
   footer {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 
   h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h3 {
     font-family: "Fira Sans", "Arial", sans-serif;
   }
 
@@ -47,6 +43,21 @@
   }
   h3 {
     font-size: 1.5em;
+  }
+
+  footer ul {
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 1rem;
+    list-style: none;
+  }
+  footer li {
+    display: inline-block;
+    padding-bottom: 6px;
+  }
+  footer li + li {
+    display: inline-block;
+    padding-left: 1rem;
   }
 </style>
 
@@ -66,12 +77,21 @@
 
   <Project
     technologies={['Svelte', 'HTML', 'CSS']}
-    title={'DanielChapman.dev'}
+    title={'danielchapman.dev'}
     image={'danielchapman-dev.png'}
     description={"This is the site that you're looking at now. A Svelte site with some simple styling and a couple snazzy animations."}
     link={'https://danielchapman.dev/'} />
 </main>
 <footer>
-  Contact me:
-  <a href="mailto:daniel@dschapman.com">daniel@dschapman.com</a>
+  <h3>Contact me</h3>
+  <ul>
+    <li>
+      Email:
+      <a href="mailto:daniel@dschapman.com">daniel@dschapman.com</a>
+    </li>
+    <li>
+      Twitter:
+      <a href="twitter.com/ds_chapman">@ds_chapman</a>
+    </li>
+  </ul>
 </footer>
