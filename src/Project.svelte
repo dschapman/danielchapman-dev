@@ -10,23 +10,43 @@
   import { tweened } from "svelte/motion";
   import { cubicOut } from "svelte/easing";
 
-  const shadowx = tweened(0, { duration: 500, easing: cubicOut });
-  const shadowy = tweened(0, { duration: 500, easing: cubicOut });
+  const shadow = tweened(0, { duration: 500, easing: cubicOut });
 
   function handleClick() {
     window.location = link;
   }
 
   function handleMouseEnter() {
-    shadowx.set(40);
-    shadowy.set(20);
+    shadow.set(1);
     hovered = true;
   }
 
   function handleMouseLeave() {
-    shadowx.set(0);
-    shadowy.set(0);
+    shadow.set(0);
     hovered = false;
+  }
+
+  function typewriter(node, { speed = 50 }) {
+    const valid =
+      node.childNodes.length === 1 &&
+      node.childNodes[0].nodeType === Node.TEXT_NODE;
+
+    if (!valid) {
+      throw new Error(
+        `This transition only works on elements with a single text node child`
+      );
+    }
+
+    const text = node.textContent;
+    const duration = text.length * speed;
+
+    return {
+      duration,
+      tick: (t) => {
+        const i = ~~(text.length * t);
+        node.textContent = text.slice(0, i);
+      },
+    };
   }
 
   let mounted = false;
@@ -85,7 +105,8 @@
     on:mouseleave={handleMouseLeave}
     on:touchend={handleMouseLeave}
     transition:slide={{ delay: 200 }}
-    style="box-shadow: {$shadowx}px {$shadowy}px #925c77;"
+    style="box-shadow: {$shadow * 30}px {$shadow * 15}px #925c77, {$shadow * 45}px
+    {$shadow * 21}px #75B9BE, {$shadow * 60}px {$shadow * 30}px #7297A6;"
     class="site">
     <h2
       class="title"
@@ -97,9 +118,9 @@
     <div class="description" transition:fade={{ delay: 500 }}>
       {description}
     </div>
-    <ul transition:fade={{ delay: 1000 }}>
+    <ul>
       {#each technologies as technology}
-        <li>{technology}</li>
+        <li in:typewriter={{ speed: 175 }}>{technology}</li>
       {/each}
     </ul>
   </div>
