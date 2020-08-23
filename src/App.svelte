@@ -29,6 +29,9 @@
     padding: 0;
     padding-top: 1rem;
     list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
   }
   footer li {
     display: inline-block;
@@ -67,12 +70,16 @@
   <h3>Contact me</h3>
   <ul>
     <li>
-      Email:
-      <a href="mailto:daniel@dschapman.com">daniel@dschapman.com</a>
+      <a href="mailto:daniel@dschapman.com">Email</a>
     </li>
     <li>
-      Twitter:
-      <a href="twitter.com/ds_chapman">@ds_chapman</a>
+      <a href="twitter.com/ds_chapman">Twitter</a>
+
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/daniel-chapman-63695271/">
+        LinkedIn
+      </a>
     </li>
   </ul>
 </footer>

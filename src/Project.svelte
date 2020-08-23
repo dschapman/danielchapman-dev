@@ -93,6 +93,9 @@
   ul {
     padding-bottom: 3px;
     list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
   }
   li {
     display: inline-block;
