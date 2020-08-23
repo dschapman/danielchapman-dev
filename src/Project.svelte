@@ -104,8 +104,8 @@
     padding-left: 1rem;
   }
   img {
-    flex: 0;
-    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
   }
   .code {
     flex: 1;
