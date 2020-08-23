@@ -85,7 +85,7 @@
   }
 
   .description {
-    padding-top: 1rem;
+    padding-top: 2rem;
     flex: 1;
     padding: 1rem;
   }
@@ -105,11 +105,10 @@
   }
   img {
     flex: 0;
-    width: 100%;
-    height: auto;
+    height: 200px;
   }
   .code {
-    flex: 0;
+    flex: 1;
 
     font-family: "Fira Code";
   }

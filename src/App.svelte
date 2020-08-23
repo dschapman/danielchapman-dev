@@ -18,10 +18,8 @@
     margin-top: 3rem;
   }
 
-  h3 {
-    font-family: "Fira Sans", "Arial", sans-serif;
-
-    font-size: 1.5em;
+  h2 {
+    padding-bottom: 0.5rem;
   }
 
   footer ul {
@@ -44,16 +42,19 @@
 </style>
 
 <main>
-  <Bio />
-  <h3>A list of sites that I've built</h3>
+  <Bio
+    intro="Hi, I live and work in Virginia and write code until it becomes
+    functioning websites. I've worked in React, Gatsby, and Svelte to build the
+    sites listed below, but I'm always interested in learning new technologies!" />
+  <h2>Sites I've Built</h2>
   <div class="projects">
     <Project
       technologies={['Gatsby', 'React', 'Markdown']}
       title={'dschapman.com'}
       image={'dschapman-com.png'}
-      description="A digital garden, constructed to hold articles, poems, and
-      notes. Featuring bidirectional links, link previews, and self-generating
-      OpenGraph images."
+      description="My personal website - constructed to hold articles, poems,
+      and notes. Featuring bidirectional links, link previews, and
+      self-generating OpenGraph images."
       link={'https://dschapman.com'}
       code={'https://github.com/dschapman/dschapman-com'} />
 

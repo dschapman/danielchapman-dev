@@ -2,6 +2,7 @@
   import { slide } from "svelte/transition";
   let visible = false;
   let symbol = "▽";
+  export let intro;
 </script>
 
 <style>
@@ -11,9 +12,11 @@
     color: #925c77;
     font-weight: 700;
     display: inline;
-    cursor: pointer;
   }
-
+  .about h2 {
+    padding-right: 3rem;
+    align-self: center;
+  }
   .bio {
     padding-bottom: 2rem;
   }
@@ -27,22 +30,29 @@
     font-family: "Fira Code";
     cursor: pointer;
   }
-  .intro {
+  .about {
     max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    background-color: white;
+  }
+  .about .intro {
+    flex: 1;
+    text-align: left;
   }
 </style>
 
 <div class="bio">
   <span class="name" on:click={() => (visible = !visible)}>
     <h1>Daniel Chapman</h1>
+
     <span class="symbol">{visible ? 'x' : '▽'}</span>
   </span>
   {#if visible}
-    <div class="intro" transition:slide>
-      Hi, I live and work in Virginia and write code until it becomes
-      functioning websites. I've worked in React, Gatsby, and Svelte to build
-      the sites listed below, but I'm always interested in learning new
-      technologies!
+    <div class="about" transition:slide>
+      <h2>About Me</h2>
+      <div class="intro">{intro}</div>
     </div>
   {/if}
 
