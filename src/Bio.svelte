@@ -39,9 +39,10 @@
   </span>
   {#if visible}
     <div class="intro" transition:slide>
-      Hi, I write code until it becomes a functioning website. I've worked in
-      React, Gatsby, and Svelte to build the sites listed below, but I'm always
-      interested in learning new technologies!
+      Hi, I live and work in Virginia and write code until it becomes
+      functioning websites. I've worked in React, Gatsby, and Svelte to build
+      the sites listed below, but I'm always interested in learning new
+      technologies!
     </div>
   {/if}
 
