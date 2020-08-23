@@ -56,21 +56,28 @@
 
 <style>
   .site {
+    flex: 1 1 450px;
+    display: flex;
+    flex-direction: column;
     border-radius: 15px;
+    background-color: white;
     border: solid;
     border-width: thin;
     margin: 1rem;
     padding: 1rem;
     min-width: 300px;
     max-width: 450px;
-    min-height: 500px;
+    height: 450px;
     position: relative;
     cursor: pointer;
+    justify-content: space-around;
   }
 
   .title {
+    flex: 0;
     font-family: "Fira Sans";
     font-weight: 400;
+    padding-bottom: 2rem;
   }
 
   .title a {
@@ -78,11 +85,13 @@
   }
 
   .description {
+    padding-top: 1rem;
+    flex: 1;
     padding: 1rem;
   }
 
   ul {
-    padding: 0;
+    padding-bottom: 3px;
     list-style: none;
   }
   li {
@@ -92,10 +101,13 @@
     padding-left: 1rem;
   }
   img {
+    flex: 0;
     width: 100%;
     height: auto;
   }
   .code {
+    flex: 0;
+
     font-family: "Fira Code";
   }
 </style>
@@ -121,11 +133,13 @@
     <div class="description" transition:fade={{ delay: 500 }}>
       {description}
     </div>
-    <ul class="code">
-      {#each technologies as technology}
-        <li in:typewriter={{ speed: 175 }}>{technology}</li>
-      {/each}
-    </ul>
-    <a class="code" href={code}>Source Code</a>
+    <div class="code">
+      <ul>
+        {#each technologies as technology}
+          <li in:typewriter={{ speed: 175 }}>{technology}</li>
+        {/each}
+      </ul>
+      <a href={code}>Source Code</a>
+    </div>
   </div>
 {/if}
