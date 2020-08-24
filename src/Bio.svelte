@@ -34,8 +34,10 @@
     max-width: 600px;
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
-    background-color: white;
+
+    padding: 2rem;
+    background-color: #eff4f5;
+    border-radius: 0px 0px 15px 15px;
   }
   .about .intro {
     flex: 1;

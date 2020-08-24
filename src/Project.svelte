@@ -60,9 +60,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    background-color: white;
-    border: solid;
-    border-width: thin;
+    background-color: #eff4f5;
     margin: 1rem;
     padding: 1rem;
     min-width: 300px;
