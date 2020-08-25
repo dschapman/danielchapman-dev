@@ -78,6 +78,9 @@
 
     </li>
     <li>
+      <a href="https://github.com/dschapman">Github</a>
+    </li>
+    <li>
       <a href="https://www.linkedin.com/in/daniel-chapman-63695271/">
         LinkedIn
       </a>
