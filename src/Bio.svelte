@@ -19,16 +19,16 @@
   }
   .bio {
     padding-bottom: 2rem;
+    cursor: pointer;
   }
   .name {
     display: inline-block;
   }
   .symbol {
-    padding-left: 1rem;
+    padding: 1rem;
     font-size: 2em;
     display: inline;
     font-family: "Fira Code";
-    cursor: pointer;
   }
   .about {
     max-width: 600px;
