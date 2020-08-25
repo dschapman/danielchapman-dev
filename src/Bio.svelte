@@ -19,10 +19,10 @@
   }
   .bio {
     padding-bottom: 2rem;
-    cursor: pointer;
   }
   .name {
     display: inline-block;
+    cursor: pointer;
   }
   .symbol {
     padding: 1rem;
