@@ -3,7 +3,7 @@
   export let code = "";
   export let title = "There was no Title";
   export let description = "There was no Description";
-  export let link;
+  export let link = "";
   export let image = "";
   let hovered = false;
   import { onMount } from "svelte";
@@ -139,7 +139,7 @@
           <li in:typewriter={{ speed: 175 }}>{technology}</li>
         {/each}
       </ul>
-      <a href={code}>Source Code</a>
+      {#if code != ''}<a href={code}>Source Code</a>{/if}
     </div>
   </div>
 {/if}
