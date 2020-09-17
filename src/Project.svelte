@@ -10,6 +10,7 @@
   import { fade, slide } from "svelte/transition";
   import { tweened } from "svelte/motion";
   import { cubicOut } from "svelte/easing";
+  import { randomInt } from "d3-random";
 
   const shadow = tweened(0, { duration: 500, easing: cubicOut });
 
@@ -119,24 +120,26 @@
     on:touchstart={handleMouseEnter}
     on:mouseleave={handleMouseLeave}
     on:touchend={handleMouseLeave}
-    transition:slide={{ delay: 200 }}
+    transition:slide={{ delay: randomInt(200, 500)() }}
     style="box-shadow: {$shadow * 30}px {$shadow * 15}px #925c77, {$shadow * 45}px
     {$shadow * 21}px #75B9BE, {$shadow * 60}px {$shadow * 30}px #7297A6;"
     class="site">
     <h2
       class="title"
-      transition:fade={{ delay: 250 }}
+      transition:fade={{ delay: randomInt(250, 500)() }}
       style="text-decoration: {hovered ? 'underline' : 'none'};">
       <a href={link}>{title}</a>
     </h2>
     <img src={image} alt="A screenshot of {title}" />
-    <div class="description" transition:fade={{ delay: 500 }}>
+    <div
+      class="description"
+      transition:fade={{ delay: randomInt(250, 1000)() }}>
       {description}
     </div>
     <div class="code">
       <ul>
         {#each technologies as technology}
-          <li in:typewriter={{ speed: 175 }}>{technology}</li>
+          <li in:typewriter={{ speed: randomInt(150, 300)() }}>{technology}</li>
         {/each}
       </ul>
       {#if code != ''}<a href={code}>Source Code</a>{/if}
