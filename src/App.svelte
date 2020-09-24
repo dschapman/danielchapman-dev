@@ -77,7 +77,7 @@
   <h3>Contact me</h3>
   <ul>
     <li><a href="mailto:daniel@dschapman.com">Email</a></li>
-    <li><a href="twitter.com/ds_chapman">Twitter</a></li>
+    <li><a href="https://twitter.com/ds_chapman">Twitter</a></li>
     <li><a href="https://github.com/dschapman">Github</a></li>
     <li>
       <a href="https://www.linkedin.com/in/daniel-chapman-63695271/">
