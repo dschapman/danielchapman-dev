@@ -70,7 +70,8 @@
       title={'My Favorite Colors'}
       image={'colors-danielchapman-dev.png'}
       description={"A site that uses Twit.js and the Twitter API to get the colors I've liked from the @everycolor bot and generate a responsive grid of colors."}
-      link={'https://colors.danielchapman.dev/'} />
+      link={'https://colors.danielchapman.dev/'}
+      code={'https://github.com/dschapman/MyFavoriteColors'} />
   </div>
 </main>
 <footer>
