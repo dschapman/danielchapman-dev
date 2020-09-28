@@ -9,3 +9,7 @@ This site has two Svelte components - Projects and Bio. Projects are for differe
 ## 🎞 Animations
 
 Svelte has great animation support so I used several of their native animations for this project. 
+
+## 📚 Read More
+
+I wrote about the process of making this site in [Create a Basic Svelte Site](https://www.dschapman.com/articles/create-a-svelte-site).
