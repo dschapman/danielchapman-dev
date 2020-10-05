@@ -72,6 +72,13 @@
       description={"A site that uses Twit.js and the Twitter API to get the colors I've liked from the @everycolor bot and generate a responsive grid of colors."}
       link={'https://colors.danielchapman.dev/'}
       code={'https://github.com/dschapman/MyFavoriteColors'} />
+    <Project
+      technologies={['React', 'axios']}
+      title={'Podcast Fetcher'}
+      image={'podcastfetcher-danielchapman-dev.png'}
+      description={'Download all the mp3 files listed in a Podcast RSS feed.'}
+      link={'https://podcastfetcher.danielchapman.dev/'}
+      code={'https://github.com/dschapman/get-podcasts-from-rss-feed'} />
   </div>
 </main>
 <footer>
