@@ -73,7 +73,7 @@
       link={'https://colors.danielchapman.dev/'}
       code={'https://github.com/dschapman/MyFavoriteColors'} />
     <Project
-      technologies={['React', 'RSS', 'Axios']}
+      technologies={['React', 'Next.js', 'Axios']}
       title={'Podcast Fetcher'}
       image={'podcastfetcher-danielchapman-dev.png'}
       description={'Download all the mp3 files listed in a Podcast RSS feed.'}
