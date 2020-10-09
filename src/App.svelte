@@ -43,8 +43,7 @@
 
 <main>
   <Bio
-    intro="Hi, I live and work in Virginia and write code until it becomes
-    functioning websites. I've worked in React, Gatsby, and Svelte to build the
+    intro="Hi, I live and work in Virginia and am interested in Frontend Development roles. I've worked in React, Gatsby, Next.js and Svelte to build the
     sites listed below, but I'm always interested in learning new technologies!" />
   <h2>Sites I've Built</h2>
   <div class="projects">

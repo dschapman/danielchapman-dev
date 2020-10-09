@@ -36,7 +36,12 @@
     justify-content: space-between;
 
     padding: 2rem;
-    background-color: #eff4f5;
+    background-image: linear-gradient(
+      353deg,
+      hsl(190, 23.1%, 94.9%) 43%,
+      hsl(180, 30.8%, 94.9%) 92%
+    );
+
     border-radius: 0px 0px 15px 15px;
   }
   .about .intro {
@@ -57,5 +62,4 @@
       <div class="intro">{intro}</div>
     </div>
   {/if}
-
 </div>

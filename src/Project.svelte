@@ -61,7 +61,11 @@
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    background-color: #eff4f5;
+    background-image: linear-gradient(
+      353deg,
+      hsl(190, 23.1%, 94.9%) 43%,
+      hsl(180, 30.8%, 94.9%) 92%
+    );
     margin: 1rem;
     padding: 1rem;
     min-width: 300px;
