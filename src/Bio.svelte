@@ -9,7 +9,13 @@
   h1 {
     font-family: "Fira Sans", "Arial", sans-serif;
     font-size: 4em;
-    color: #925c77;
+    background-image: linear-gradient(
+      6deg,
+      hsl(330, 22.7%, 46.7%) 20%,
+      hsl(333.9, 22.5%, 60%) 84%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 700;
     display: inline;
   }
