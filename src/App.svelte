@@ -75,9 +75,15 @@
       technologies={['React', 'Next.js', 'Axios']}
       title={'Podcast Fetcher'}
       image={'podcastfetcher-danielchapman-dev.png'}
-      description={'Download all the mp3 files listed in a Podcast RSS feed.'}
+      description={'Download all the mp3 files listed in a Podcast RSS feed. Uses React hooks.'}
       link={'https://podcastfetcher.danielchapman.dev/'}
       code={'https://github.com/dschapman/get-podcasts-from-rss-feed'} />
+    <Project
+      technologies={['AWS', 'Wordpress', 'Next.js']}
+      title={'Headless Wordpress Deployment'}
+      image={'headless-wordpress-deployment.png'}
+      description={'A Next.js frontend (built using existing templates) and a Wordpress backend that I deployed using AWS Lightsail.'}
+      link={'https://next-wordpress.danielchapman.dev'} />
   </div>
 </main>
 <footer>

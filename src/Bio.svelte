@@ -14,6 +14,7 @@
       hsl(330, 22.7%, 46.7%) 20%,
       hsl(333.9, 22.5%, 60%) 84%
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
