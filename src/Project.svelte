@@ -68,7 +68,7 @@
     );
     margin: 1rem;
     padding: 1rem;
-    min-width: 300px;
+    min-width: 250px;
     max-width: 450px;
     height: 450px;
     position: relative;
